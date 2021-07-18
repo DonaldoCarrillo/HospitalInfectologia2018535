@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.donaldocarrillo.controller.MedicamentosController">
+   <children>
+      <ImageView fitHeight="616.0" fitWidth="755.0">
+         <image>
+            <Image url="@Fondo%20Stock.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="761.0" layoutX="-3.0" layoutY="30.0" onMouseClicked="#menuPrincipal">
+         <image>
+            <Image url="@linea.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="256.0" text="Inventario">
+         <font>
+            <Font name="Arial Black" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="103.0" text="Codigo Medicamento">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbidMedicamento" layoutX="293.0" layoutY="104.0" prefHeight="25.0" prefWidth="169.0" promptText="ID Medicamento" />
+      <Label layoutX="14.0" layoutY="148.0" text="Nombre del Medicamento">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnombreMedicamento" layoutX="294.0" layoutY="150.0" prefHeight="25.0" prefWidth="169.0" promptText="Nombre del Medicamento" />
+      <Label layoutX="188.0" layoutY="197.0" text="Cantidad">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcantidad" layoutX="293.0" layoutY="199.0" prefHeight="25.0" prefWidth="169.0" promptText="Cantidad de Medicamentos" />
+      <Label layoutX="143.0" layoutY="242.0" text="Presentacion">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpresentacion" layoutX="293.0" layoutY="243.0" prefHeight="25.0" prefWidth="169.0" promptText="Presentacion del Medicamento" />
+      <Label layoutX="56.0" layoutY="291.0" text="Via De Administracion">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtviaDeAdministracion" layoutX="294.0" layoutY="292.0" prefHeight="25.0" prefWidth="169.0" promptText="Via De Administracion" />
+      <TableView fx:id="tblInventario" layoutX="13.0" layoutY="324.0" prefHeight="270.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="colidMedicamento" prefWidth="83.0" text="Codigo Medicamento" />
+          <TableColumn fx:id="colnombreMedicamento" prefWidth="239.0" text="Nombre del Medicamento" />
+            <TableColumn fx:id="colcantidad" prefWidth="61.0" text="Cantidad" />
+            <TableColumn fx:id="colpresentacion" prefWidth="159.0" text="Presentacion" />
+            <TableColumn fx:id="colviaDeAdministracion" prefWidth="188.0" text="Via De Administracion" />
+        </columns>
+      </TableView>
+      <ImageView layoutX="509.0" layoutY="104.0">
+         <image>
+            <Image url="@inventario.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

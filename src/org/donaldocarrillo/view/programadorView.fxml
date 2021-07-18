@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.donaldocarrillo.controller.ProgramadorController">
+   <children>
+      <ImageView disable="true" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/2284062-primer-plano-de-estetoscopio-en-el-teclado-portátil-.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutY="291.0" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: white;" text="Donaldo Sebastian Carrillo Caal" />
+      <Label layoutY="323.0" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: white;" text="donaldocarrillo06@gmail.com" />
+      <Label layoutY="361.0" prefHeight="39.0" prefWidth="214.0" style="-fx-background-color: white;" text="Centro educativo técnico laboral KINAL" />
+      <Label layoutY="265.0" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: white;" text="IN5BV 2018-535" />
+      <ImageView fitHeight="114.0" fitWidth="79.0" layoutX="521.0" layoutY="323.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/confidencialidad.png" />
+         </image></ImageView>
+      <ImageView fitHeight="126.0" fitWidth="157.0" layoutX="513.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/WhatsApp%20Image%202019-06-01%20at%2020.59.58.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

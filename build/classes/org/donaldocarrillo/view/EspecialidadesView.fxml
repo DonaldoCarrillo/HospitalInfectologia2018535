@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.donaldocarrillo.controller.EspecialidadesController">
+   <children>
+      <ImageView fitHeight="315.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fondo-contacto_3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="315.0" fitWidth="394.0" layoutX="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fondo-contacto_3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="7.0" prefHeight="32.0" prefWidth="120.0" text="Especialidad" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombreEspecialidad" editable="false" layoutX="141.0" layoutY="55.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="6.0" layoutY="52.0" prefHeight="32.0" prefWidth="135.0" text="Nombre especialidad" textFill="#fcfcfc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEspecialidad" layoutY="110.0" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="205.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="colCodEspecialidad" prefWidth="167.0" text="Codigo Especialidad" />
+          <TableColumn fx:id="colNombreEspecialidad" prefWidth="162.0" text="Nombre Especialidad" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="80.0" fitWidth="78.0" layoutX="355.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/confidencialidad.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAgregar" layoutX="343.0" layoutY="134.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="80.0" text="Agregar" />
+      <Button fx:id="btnEliminar" layoutX="343.0" layoutY="172.0" mnemonicParsing="false" onAction="#eliminarEspecialidades" prefHeight="31.0" prefWidth="80.0" text="Elimnar" />
+      <Button fx:id="btnEditar" layoutX="343.0" layoutY="213.0" mnemonicParsing="false" onAction="#editarEspecialidades" prefHeight="31.0" prefWidth="80.0" text="Editar" />
+      <Button fx:id="btnReportes" layoutX="343.0" layoutY="253.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="Reportes" />
+   </children>
+</AnchorPane>

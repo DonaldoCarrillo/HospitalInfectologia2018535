@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.donaldocarrillo.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hospital_0.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="380.0" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPacientes" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicos" text="Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTurno" text="Turnos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaAreas" text="Areas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCargos" text="Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaContactos" text="Contacto Urgencia" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTelefonos" text="Telefono Medico" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaHorarios" text="Horarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicoEspecialidad" text="Medico Especialidad" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaResponsableTurno" text="Responsable Turno" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaControlCita" text="Control Citas" />
+                  <MenuItem mnemonicParsing="false" text="Medicamentos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#reporteMedicos" text="Reporte Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#reportePaciente" text="Reporte Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteAreas" text="Reporte Areas" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteCargos" text="Reporte Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteTurnos" text="Reporte Turnos" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteContactoUrgencia" text="Reporte Contacto Urgencia" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteEspecialidades" text="Reporte Especialidad" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteHorarios" text="Reporte Horarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteMedicoEspecialidad" text="Reporte Medico Especialidad" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteResponsableTurno" text="Reporte Responsable Turno" />
+                  <MenuItem mnemonicParsing="false" onAction="#reporteTelefonoMedico" text="Reporte Telefono Medico" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de ">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#VentanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

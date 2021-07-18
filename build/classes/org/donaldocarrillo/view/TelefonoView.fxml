@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.donaldocarrillo.controller.TelefonoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Medicos-Hospital-Inteligente.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="215.0" layoutY="6.0" prefHeight="36.0" prefWidth="134.0" text="Telefono Medico">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="46.0" prefHeight="19.0" prefWidth="112.0" text="Telefono Personal">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="46.0" prefHeight="17.0" prefWidth="98.0" text="Telefono trabajo" />
+      <Label layoutX="295.0" layoutY="90.0" prefHeight="17.0" prefWidth="98.0" text="Codigo Medico" />
+      <ComboBox fx:id="cmbCodMedico" layoutX="393.0" layoutY="86.0" prefHeight="25.0" prefWidth="134.0" />
+      <TableView fx:id="tblTelefono" layoutX="-3.0" layoutY="194.0" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="206.0" prefWidth="462.0">
+         <columns>
+            <TableColumn fx:id="colCodTelefonoMedico" prefWidth="133.0" text="Cod. Telefono" />
+            <TableColumn fx:id="colTelefonoPersonal" prefWidth="119.0" text="Telefono Personal" />
+            <TableColumn fx:id="colTelefonoTrabajo" prefWidth="115.0" text="Telefono trabajo" />
+            <TableColumn fx:id="colCodMedico" prefWidth="94.0" text="Codigo Medico" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="473.0" layoutY="229.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="74.0" text="Agregar" />
+      <Button fx:id="btnEliminar" layoutX="473.0" layoutY="262.0" mnemonicParsing="false" onAction="#eliminarTelefono" prefHeight="25.0" prefWidth="74.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="473.0" layoutY="294.0" mnemonicParsing="false" onAction="#editarTelefono" prefHeight="25.0" prefWidth="74.0" text="Editar" />
+      <ImageView fitHeight="57.0" fitWidth="77.0" layoutX="537.0" layoutY="18.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/confidencialidad.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtTelefonoPersonal" editable="false" layoutX="132.0" layoutY="42.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="txtTelefonoTrabajo" editable="false" layoutX="393.0" layoutY="42.0" prefHeight="25.0" prefWidth="134.0" />
+      <Button fx:id="btnReportes" layoutX="473.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Reportes" />
+   </children>
+</AnchorPane>
